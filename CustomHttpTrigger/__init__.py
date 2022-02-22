@@ -5,7 +5,7 @@ import azure.functions as func
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('PGPCC HTTP trigger function processed a request.')
-    message = "This function is a part of PGPCC Capstone project. Execution successfull."
+    message = "This function is a part of PGPCC Capstone project. Execution successfull. "
     name = req.params.get('name')
     if not name:
         try:
